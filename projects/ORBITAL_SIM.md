@@ -1,12 +1,12 @@
 # Orbital Sim
 
 ## Reasoning
-This is a project I've selected to develop in order to expand my horizions and overall domain in simulation development. Additionally it is to refine my capability with threading and hpc development. Where this will not be a direct hpc implementation, I will be building from hpc principles. Examples of this being: tasks higly limited shared resources, limiting stealing due to latency of communication between nodes, dynamic load balancing via worker stealing, and SIMD register packing with type pruning. Where type pruning may not be the best for all hpc systems due to the adopting of ai-focused hpc hardware optimizing for floats. 
+This is a project I've selected to develop in order to expand my horizons and overall domain in simulation development. Additionally it is to refine my capability with threading and hpc development. Where this will not be a direct hpc implementation, I will be building from hpc principles. Examples of this being: tasks higly limited shared resources, limiting stealing due to latency of communication between nodes, dynamic load balancing via worker stealing, and SIMD register packing with type pruning. Where type pruning may not be the best for all hpc systems due to the adopting of ai-focused hpc hardware optimizing for floats. 
 
 **KDK Simplification**
 Due to the nature of pm simulation, leapfrog can be simplified by setting "initial" conditions to start at a half-step rather than at t = 0. From that point, you can update v using a single operation full-step. The reason this is allowed is because kdk looks like this:
 kick(1/2 step velocity) drift(move) kick(now at full step), kick(1/2 step)...
-Because kick at full step andkick and 1/2 step in between cycles happen at the same position, v will always be the same for those two steps, so it can be simplified into:
+Because kick at full step and kick and 1/2 step in between cycles happen at the same position, v will always be the same for those two steps, so it can be simplified into:
 
 kick(1/2 step velocity), drift(move) kick(now at next 1/2 step)
 
