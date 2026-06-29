@@ -3,6 +3,11 @@ Welcome to my incubator. This is where I will be fleshing out my project ideas f
 
 ## Projects:
 
+### Threaded PM Orbital Simulation With HPC-based Architecture ** CURRENT PROJECT **
+A scalable orbital simulation written from scratch in C++ with worker stealing. This project was selected to expand my horizions in simulation development, as well as refine my capability with hpc and threading. Check out my plan [here](./projects/ORBITAL_SIM.md). 
+
+Project repository is [here](https://github.com/AdamP1592/OrbitalSim).
+
 ### RAG Safety Lookup.
 A retrieval system that aggregates data from global product safety databases to identify safety concerns for products. Creates effective search queries from user-defined requests, and generates confidence-aware safety reports based on source coverage and result relevance. Check out what I'll be doing [here](./projects/RAG_SAFETY_TOOL.md).
 
