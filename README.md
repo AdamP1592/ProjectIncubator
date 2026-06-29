@@ -4,7 +4,7 @@ Welcome to my incubator. This is where I will be fleshing out my project ideas f
 ## Projects:
 
 ### Threaded PM Orbital Simulation With HPC-based Architecture ** CURRENT PROJECT **
-A scalable orbital simulation written from scratch in C++ with worker stealing. This project was selected to expand my horizions in simulation development, as well as refine my capability with hpc and threading. Check out my plan [here](./projects/ORBITAL_SIM.md). 
+A scalable orbital simulation written from scratch in C++ with worker stealing. This project was selected to expand my horizons in simulation development, as well as refine my capability with hpc and threading. Check out my plan [here](./projects/ORBITAL_SIM.md). 
 
 Project repository is [here](https://github.com/AdamP1592/OrbitalSim).
 
